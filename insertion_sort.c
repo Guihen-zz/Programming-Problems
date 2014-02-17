@@ -18,15 +18,11 @@ void insertionSort(int ar_size, int *  ar) {
         for (j = i; ar[j - 1] > aux; j--) 
         {
             ar[j] = ar[j-1];
-            printArray(ar_size, ar);
         }
         
         // if j < i, there were swap
-        if(j != i) 
-        {
-            ar[j] = aux;
-            printArray(ar_size, ar);
-        }
+        if(j != i)  ar[j] = aux;
+        printArray(ar_size, ar);
     }
 }
 
